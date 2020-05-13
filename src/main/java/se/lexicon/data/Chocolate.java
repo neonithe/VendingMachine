@@ -34,6 +34,11 @@ public class Chocolate extends Product{
     }
 
     @Override
+    public String use(){
+        return "You have now eaten a chocolate";
+    }
+
+    @Override
     public String toString() {
         return "Chocolate{" +
                 "lightOrDark='" + lightOrDark + '\'' +

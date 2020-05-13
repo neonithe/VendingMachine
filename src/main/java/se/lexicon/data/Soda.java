@@ -8,8 +8,9 @@ public class Soda extends Product{
 
     public Soda(int stock, int price, String name, int size, int calories, String lightOrNot, String carbonated) {
         super(stock, price, name, size, calories);
-        this.lightOrNot = lightOrNot;
-        this.carbonated = carbonated;
+        setLightOrNot(lightOrNot);
+        setCarbonated(carbonated);
+
     }
 
     public String getLightOrNot() {
@@ -28,9 +29,16 @@ public class Soda extends Product{
         this.carbonated = carbonated;
     }
 
+
+
     @Override
     public String examine(){
         return super.toString() + "\nSoda: " + "Light or regular: " + lightOrNot + ", Carbonated: " + carbonated;
+    }
+
+    @Override
+    public String use(){
+        return "You have now drunken a soda";
     }
 
     @Override

@@ -33,6 +33,11 @@ public class Gum extends Product{
     }
 
     @Override
+    public String use(){
+        return "You are now chewing gum";
+    }
+
+    @Override
     public String toString() {
         return "Gum{" +
                 "lightOrNot='" + lightOrNot + '\'' +

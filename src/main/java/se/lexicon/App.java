@@ -16,5 +16,6 @@ public class App
         Product test2 = new Soda(10,10,"Cola",100,100,"Light","Yes");
 
         System.out.println(test2.examine());
+        System.out.println(test2.use());
     }
 }

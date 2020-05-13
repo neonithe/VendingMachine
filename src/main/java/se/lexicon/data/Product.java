@@ -59,6 +59,8 @@ public abstract class Product {
 
     public abstract String examine();
 
+    public abstract String use();
+
     @Override
     public String toString() {
         return "Product: " + "Stock: " + stock + ", Price: " + price + ", Name: " + name + ", Size: " + size + ", Calories: " + calories;
