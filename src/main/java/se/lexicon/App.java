@@ -16,16 +16,27 @@ public class App
 
     public static void main(String[] args )
     {
-        Product test = new Chocolate(10,10,"test",10,10, "dark","Nutts");
-        Product test2 = new Soda(10,10,"Cola",100,100,"Light","Yes");
+        VendingMachine testing = new VendingMachineFunk();
+        VendingMachineFunk testing2 = new VendingMachineFunk();
 
-        System.out.println(test2.examine());
-        System.out.println(test2.use());
+        testing.addChocolate(10,100,"Test",100,100,"Light","Nutts");
+        testing.addSoda(10,100,"Test",100,100,"Test","Test");
+        testing.addGum(10,100,"Test",100,100,"Test","Test");
+        testing2.addProduct(10,100,"test",100,100);
 
-        System.out.println(test.examine());
-        System.out.println(test.use());
+        // Find Array
 
-        System.out.println(Deposit.DEP100.deposit());
+        // Find product
+       // Product testItem = testing.request(1);
+        // Deposit money
+        testing.addCurrency(Deposit.DEP1000.deposit());
+        System.out.println("Balans: "+testing.getBalance());
+
+        System.out.println(testing.request(1));
+        System.out.println("Balans: "+testing.getBalance());
+        System.out.println(testing.request(1));
+       // System.out.println(testing.buy(testItem));
+
 
     }
 }

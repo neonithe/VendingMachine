@@ -40,9 +40,6 @@ public class Chocolate extends Product{
 
     @Override
     public String toString() {
-        return "Chocolate{" +
-                "lightOrDark='" + lightOrDark + '\'' +
-                ", contain='" + contain + '\'' +
-                '}';
+        return super.toString() +"\nChocolate: " + "Milk or dark: " + lightOrDark + ", Contains: " + contain;
     }
 }

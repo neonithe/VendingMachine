@@ -29,7 +29,7 @@ public class Gum extends Product{
 
     @Override
     public String examine(){
-        return super.toString() + "Gum: " + "Light or regular: " + lightOrNot + '\'' + ", Packaging: " + packaging;
+        return super.toString() + "\nGum: " + "Light or regular: " + lightOrNot + ", Packaging: " + packaging;
     }
 
     @Override
@@ -39,9 +39,6 @@ public class Gum extends Product{
 
     @Override
     public String toString() {
-        return "Gum{" +
-                "lightOrNot='" + lightOrNot + '\'' +
-                ", packaging='" + packaging + '\'' +
-                '}';
+        return super.toString() + "\nGum: " + "Light or regular: " + lightOrNot + ", Packaging: " + packaging;
     }
 }

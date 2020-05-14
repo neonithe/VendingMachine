@@ -43,9 +43,6 @@ public class Soda extends Product{
 
     @Override
     public String toString() {
-        return "Soda{" +
-                "lightOrNot='" + lightOrNot + '\'' +
-                ", carbonated='" + carbonated + '\'' +
-                '}';
+        return super.toString() + "\nSoda: " + "Light or regular: " + lightOrNot + ", Carbonated: " + carbonated;
     }
 }
