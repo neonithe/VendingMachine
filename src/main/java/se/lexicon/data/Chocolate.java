@@ -35,7 +35,7 @@ public class Chocolate extends Product{
 
     @Override
     public String use(){
-        return "You have now eaten a chocolate";
+        return "You have now bought a chocolate, and it was delicious!";
     }
 
     @Override

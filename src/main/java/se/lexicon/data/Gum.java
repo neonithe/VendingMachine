@@ -34,7 +34,7 @@ public class Gum extends Product{
 
     @Override
     public String use(){
-        return "You are now chewing gum";
+        return "You have now bought a gum, keep on chewing!";
     }
 
     @Override

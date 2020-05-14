@@ -38,7 +38,7 @@ public class Soda extends Product{
 
     @Override
     public String use(){
-        return "You have now drunken a soda";
+        return "You have now bought a soda, and it was delicious!";
     }
 
     @Override
