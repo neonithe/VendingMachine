@@ -100,12 +100,14 @@ public class VendingMachineFunk implements VendingMachine{
 
     @Override
     public String[] getProducts() {
-        String[] tempArray;
-        return new String[0];
-    }
+        int length = shelf.length;
+        String[] useArray = new String[length];
 
-    public Product[] findAll(){
-        return shelf;
+
+
+
+
+        return new String[0];
     }
 
     public Product findProduct(int id){
@@ -125,10 +127,6 @@ public class VendingMachineFunk implements VendingMachine{
                 return false;
             }
             return true;
-    }
-
-    public int findAllArray(){
-        return shelf.length;
     }
 
     public void clear(){

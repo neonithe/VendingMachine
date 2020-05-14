@@ -1,8 +1,5 @@
 package se.lexicon;
 
-import se.lexicon.data.Chocolate;
-import se.lexicon.data.Product;
-import se.lexicon.data.Soda;
 import se.lexicon.ux.Deposit;
 import se.lexicon.ux.VendingMachine;
 import se.lexicon.ux.VendingMachineFunk;
@@ -35,6 +32,10 @@ public class App
         System.out.println(testing.request(1));
         System.out.println("Balans: "+testing.getBalance());
         System.out.println(testing.request(1));
+        System.out.println("Change: "+testing.endSession());
+        System.out.println("Balans: "+testing.getBalance());
+        System.out.println("Get product");
+        System.out.println(testing.getDescription(1));
        // System.out.println(testing.buy(testItem));
 
 
