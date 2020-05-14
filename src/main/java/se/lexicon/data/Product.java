@@ -73,6 +73,10 @@ public abstract class Product {
 
     public abstract String use();
 
+    public int clear(){
+        return barNumber =0;
+    }
+
     @Override
     public String toString() {
         return "Product: \n"+ "ID: "+ productNr + " Stock: " + stock + ", Price: " + price + ", Name: " + name + ", Size: " + size + ", Calories: " + calories;

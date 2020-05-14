@@ -12,10 +12,12 @@ import static org.junit.Assert.assertTrue;
 public class VendingMachineFunkTest {
 
     VendingMachineFunk testingFunk = new VendingMachineFunk();
+    Product test;
 
     @Before
     public void setup(){
      //   testingFunk.addCurrency(100);
+
         testingFunk.addSoda(100,50,"Test",100,100,"Test","Test");
         testingFunk.addChocolate(100,100,"Test",100,100,"Test","Test");
         testingFunk.addGum(100,100,"Test",100,100,"Test","Test");
@@ -24,6 +26,7 @@ public class VendingMachineFunkTest {
     @After
     public void clear(){
         testingFunk.clear();
+        test.clear();
     }
 
     @Test
@@ -45,14 +48,7 @@ public class VendingMachineFunkTest {
         System.out.println(testingFunk.getBalance());
 
     }
-    @Test
-    public void get_description(){
-        // Setup
-        testingFunk.getDescription(1);
 
-        System.out.println(testingFunk.getDescription(1));
-
-    }
     @Test
     public void find_right_product(){
 
@@ -61,6 +57,22 @@ public class VendingMachineFunkTest {
         System.out.println(testingFunk.findProduct(1));
 
     }
+    @Test
+    public void get_description(){
+        // Setup
+
+        Product[] test = testingFunk.array();
+        for(int i =0; i < test.length; i++){
+                System.out.println(test[i].examine());
+        }
+
+//        testingFunk.getDescription(1);
+
+
+  //      System.out.println(testingFunk.getDescription(1));
+
+    }
+
     @Test
     public void check_saldo(){
         //Setup

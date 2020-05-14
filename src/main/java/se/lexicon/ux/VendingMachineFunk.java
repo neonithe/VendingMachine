@@ -100,14 +100,12 @@ public class VendingMachineFunk implements VendingMachine{
 
     @Override
     public String[] getProducts() {
-        int length = shelf.length;
-        String[] useArray = new String[length];
-
-
-
-
-
-        return new String[0];
+        // String [] getProducts () - Returns all Products' names and product numbers.
+        String[] tempArray = new String[shelf.length];
+        for(int i =0; i < shelf.length; i++){
+                tempArray[i] = "Product: "+shelf[i].getName()+" Product nr: "+shelf[i].getProductNr()+" Price: "+shelf[i].getPrice();
+        }
+        return tempArray;
     }
 
     public Product findProduct(int id){
@@ -124,7 +122,7 @@ public class VendingMachineFunk implements VendingMachine{
     public boolean checkSaldo(Product item){
         int price = item.getPrice();
             if(pool < price || pool == 0){
-                return false;
+              return false;
             }
             return true;
     }
@@ -132,4 +130,10 @@ public class VendingMachineFunk implements VendingMachine{
     public void clear(){
         shelf = new Product[0];
     }
+
+    public Product[] array(){
+        return shelf;
+    }
+
+
 }

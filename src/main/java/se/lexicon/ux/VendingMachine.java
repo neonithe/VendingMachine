@@ -13,6 +13,6 @@ public interface VendingMachine {
     int endSession ();
     String getDescription (int productNumber);
     int getBalance ();
-    String [] getProducts ();
+    String[] getProducts ();
 
 }
